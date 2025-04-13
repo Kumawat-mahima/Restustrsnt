@@ -1,0 +1,111 @@
+.pay-container {
+  background-color: #1e002e;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pay-box {
+  background-color: #2b003b;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.upi-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.circle-avatar {
+  width: 45px;
+  height: 45px;
+  background-color: #00c1d4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 12px;
+  color: white;
+}
+
+.upi-id {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.amount-input,
+.message-input {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3a0051;
+  color: white;
+}
+
+.amount-input::placeholder,
+.message-input::placeholder {
+  color: #999;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.pay-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background-color: #5c2d91;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.pay-button:hover {
+  background-color: #7a45b3;
+}
+
+.processing-message {
+  color: #ffc107;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.success-message {
+  color: #00e676;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.home-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.home-button:hover {
+  background-color: #28be30;
+}

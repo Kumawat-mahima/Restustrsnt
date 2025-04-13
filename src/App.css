@@ -1,0 +1,81 @@
+/* NAVBAR STYLING */
+.navbar {
+  background-color: #ff6347;;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 16px;
+  margin-left: 15px;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-links button:hover {
+  background: white;
+  color: #ff6347;
+}
+.hero-image {
+  width: 200px;
+  max-width: 200px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+
+/* FRONT PAGE SECTION */
+.front-page {
+  text-align: center;
+  padding: 5px 20px;
+  background: linear-gradient(to right, #f3e5f5, #b985c2);
+
+  height: calc(100vh - 70px); /* minus navbar height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.front-page h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.front-page p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.front-page button {
+  background-color: #ff5722;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.front-page button:hover {
+  background-color: #e64a19;
+}

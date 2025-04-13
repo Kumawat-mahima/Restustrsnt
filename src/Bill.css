@@ -1,0 +1,155 @@
+/* Background setup on the body */
+body {
+  background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=6000&q=100');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Semi-transparent card for the bill section */
+.bill-page {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  color: #333;
+  backdrop-filter: blur(4px);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #2c3e50;
+}
+
+/* Bill Table */
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+.bill-table th,
+.bill-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.bill-table th {
+  background-color: #f8f9fa;
+  color: #555;
+}
+
+.bill-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.bill-table td:last-child {
+  text-align: right;
+}
+
+/* Buttons container */
+.bill-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Base button style (fallback) */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Unique button styles */
+.btn-back {
+  background-color: #11bf11; /* orange */
+}
+.btn-back:hover:not(:disabled) {
+  background-color: #009835;
+}
+
+.btn-coupon {
+  background-color: #3498db; /* blue */
+}
+.btn-coupon:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.btn-order {
+  background-color: #11bf11; /* red */
+}
+.btn-order:hover:not(:disabled) {
+  background-color: #009835;
+}
+.btn-order:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Coupon section */
+.coupon-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.coupon-label {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.coupon-section input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px solid #029fcf;
+  font-size: 16px;
+  width: 200px;
+  margin-bottom: 8px;
+}
+
+/* Coupon message feedback */
+.coupon-message {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.coupon-message.success {
+  color: green;
+}
+
+.coupon-message.error {
+  color: red;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .bill-page {
+    padding: 16px;
+  }
+
+  .bill-table th,
+  .bill-table td {
+    padding: 8px 10px;
+  }
+
+  .coupon-section input {
+    width: 100%;
+  }
+}
